@@ -1,19 +1,39 @@
 <!doctype html>
+<!-- Create a text input within the form and set its name attribute to the value "q".
+Create a radio group with one radio button for each search engine. Recall that radio buttons with the same name are grouped, so use the same value for this attribute, "engine", on each radio button.
+Create a label element for each radio button.
+Finally, add a submit button to the form and set it's value to "Go!". -->
 
 <head>
 	<meta charset="utf-8">
 	<script>
 		// TODO: create a handler
     window.addEventListener("load", function(){
-        // TODO: register the handler
-    });
+	
+    };
+	function setSearchEngine(){
+	console.log("This will set search.")
+    };
+
+
 	</script>
 </head>
 
 <body>
-
 	<form id="searchForm">
     <!-- TODO: add form elements -->
+    <h1>Search Engine</h1>
+    <form action = 'https://handlers.education.launchcode.org/request-parrot'>
+	<label>Term To Search: <input type= "text" name = "q"/></label>
+	
+	<br><input type= "radio" name = "Google"/> Google </label>
+	
+	<label> <input type= "radio" name = "Google"/> DuckDuckGo </label>
+	
+	<label><input type= "radio" name = "Google"/>Bing </label>
+	
+	<input type= "radio" name = "Google"/>AskJeeves</label>
+		
 	</form>
-
+	
 </body>
